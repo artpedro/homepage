@@ -9,8 +9,11 @@
         <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/d563ea2da0.js" crossorigin="anonymous"></script>
-        <link href="./assets/css/index.css" rel="stylesheet">
+        <link href="./assets/css/photos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css" integrity="sha512-NVt7pmp5f+3eWRPO1h4A1gCf4opn4r5z2wS1mi7AaVcTzE9wDJ6RzMqSygjDzYHLp+mAJ2/qzXXDHar6IQwddQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="./assets/js/main.js"></script>
+        <link rel="stylesheet" href="<CSS URL>">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" integrity="sha512-7KzSt4AJ9bLchXCRllnyYUDjfhO2IFEWSa+a5/3kPGQbr+swRTorHQfyADAhSlVHCs1bpFdB1447ZRzFyiiXsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <title>Artur Homepage</title>
     </head>
 
@@ -74,27 +77,43 @@
                     <hr class="long">
                 </div>
                 <section>
-                    <div id="CV" class="card faded">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>Curriculum</strong></h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">About my professional life</h6>
-                            <hr>
-                            <p class="card-text">Currently, I'm graduating at the Federal University of Pará (UFPA) in Biotechnology with a specialization in Bioinformatics. I am a curious and versatile person, passionate about science and computation, with interests in different areas of natural and exact sciences. Learning new concepts and adapting to new environments is easy for me. I consider myself an efficient collaborator.<br>
-                                At the moment, I am working on a research project (Scientific Initiation) that aims at the development of a database of pathogenic microorganisms. For future projects, I am also deepening my studies in the areas of machine learning, neuroscience, and signal processing.<br>
-                                I'm always looking for new opportunities for learning and growth. I believe bioinformatics has the potential to change the world, and I'm excited to be a part of that change.</p>
-                        </div>
-                    </div>
-                    <div id="bio" class="card faded">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>Who am I?</strong></h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">About my personal life</h6>
-                            <hr>
-                            <p class="card-text">From an early age, I’ve been drawn to the mathematics, the joy of science, and the innovative world of computer technology. These interests have not only shaped my academic pursuits, but also paved the way for my professional aspirations.<br>
-                                In the midst of my journey, my family, my dog, and my girlfriend have been my anchors, providing a sense of stability and unconditional love. They are my heart, filled with warmth and companionship.<br>
-                                As I look towards the future, I envision myself immersed in the field of technology and artificial intelligence. This is not just a career choice, but a lifelong passion that I hope to explore and contribute to.
-                                In addition to my professional goals, I have a deep-seated desire to travel, always besides my love. I yearn to experience diverse cultures, marvel at the wonders of the world, and broaden my perspectives through these journeys.
-                            </p>
-                        </div>
+                    <div class="baguetteBoxOne gallery">
+                       <a href="assets/image/neuron.jpeg">
+                            <img src="assets/image/neuron.jpeg" alt="teste">
+                        </a>
+                        <a href="assets/image/neuron2.jpeg">
+                            <img src="assets/image/neuron2.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/neuron3.jpeg">
+                            <img src="assets/image/neuron3.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/thor1.jpeg">
+                            <img src="assets/image/thor1.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/thor2.jpeg">
+                            <img src="assets/image/thor2.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/thor3.jpeg">
+                            <img src="assets/image/thor3.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/ufpa1.jpeg">
+                            <img src="assets/image/ufpa1.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/ufpa2.jpeg">
+                            <img src="assets/image/ufpa2.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/ufpa3.jpeg">
+                            <img src="assets/image/ufpa3.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/amor.jpeg">
+                            <img src="assets/image/amor.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/amor2.jpeg">
+                            <img src="assets/image/amor2.jpeg" alt="">
+                        </a>
+                        <a href="assets/image/amor3.jpeg">
+                            <img src="assets/image/amor3.jpeg" alt="">
+                        </a>
                     </div>
                 </section>
             </main>
@@ -138,12 +157,13 @@
                 </footer>
             </div>
             <script>
+                baguetteBox.run('.baguetteBoxOne');
                 var title_id = 'greeting'
-                var txt = 'Hello there, I\'m Artur!';
+                var txt = 'My Photos';
                 var speed = 70;
                 window.addEventListener('load', function() {
                     typeWriter(title_id, txt, speed);
-                    fadein(document.querySelector('#bio'));
+                    fadein(document.querySelector('.gallery'));
                     fadein(document.querySelector('#CV'));
                 })
             </script>

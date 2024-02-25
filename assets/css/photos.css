@@ -109,7 +109,7 @@ img#pfp {
 .banner {
   width: 100%;
   height: 30vh;
-  background-image: url("https://d3ugq33b6jrffx.cloudfront.net/wp-content/uploads/2018/05/Neural-Networks.jpg");
+  background-image: url("../image/horizon_background.jpg");
   background-size: cover;
   background-position: center bottom;
 }
@@ -126,6 +126,7 @@ main {
     flex: 5 0 auto;
     display: flex;
     flex-flow: row wrap;
+    height: 100%;
 }
 .title {
     margin: 2rem auto 0rem auto;
@@ -145,10 +146,11 @@ hr.long {
 }
 
 main section {
-    max-width: 100%;
-    height:70vh;
+    padding: auto;
+    text-align: center;
     display: flex;
     flex-flow: row wrap;
+    align-content: center;
 }
 .card-body {
   color: black;
@@ -218,4 +220,22 @@ footer {
 
 #current-page {
   border: solid 2px #31304D;
+}
+
+.gallery:after {
+  content: '';
+  display: block;
+  height: 2px;
+  margin: .5em 0 1.4em;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery img {
+  height: 40vh;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 0 0 4px -1px #000;
+  image-rendering: optimizeQuality;
+  margin: 2vh;
 }
