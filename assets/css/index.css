@@ -1,0 +1,222 @@
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #F0ECE5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover
+{
+  color: inherit;
+}
+
+div.page {
+    display: flex;
+    flex-flow: row wrap;
+    height:100%;
+}
+
+aside.side-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 23%;
+    height: 100vh;
+    flex: 1 0 auto;
+    padding: 32px 16px;
+    background: #161A30;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    flex-basis: auto;
+}
+
+img#pfp {
+    width: 90%;
+    margin: 0% 5%;
+  }
+.name {
+    font-family: 'Glacial Indifference', sans-serif;
+    text-align: center;
+    font-size:2.5rem;
+    margin-bottom:1rem;
+}
+.name:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.social {
+  margin:auto;
+  width: 100%;
+}
+.social ul {
+  margin-top:16px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social ul li {
+  list-style:none;
+}
+.social ul li a {
+  display:block;
+  position:relative;
+  flex: 1 1 auto;
+  display:block;
+  height: 25%;
+  width: 25%;
+  line-height:32px;
+  font-size:32px;
+  text-align:center;
+  text-decoration:none;
+  color:#B6BBC4;
+  transition:.5s;
+}
+
+.linkedin:hover {
+  color: #0a66c2;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.instagram:hover {
+  color: #c32aa3;
+}
+.github:hover {
+  color: #000000;
+}
+
+.navigation ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding:0px;
+}
+.navigation ul li {
+  float: left;
+  display: block;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+.navigation ul li:hover {
+  background: #31304D;
+  color: #fff;
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+  height: 30vh;
+  background-image: url("https://d3ugq33b6jrffx.cloudfront.net/wp-content/uploads/2018/05/Neural-Networks.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+.banner img{
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+    margin-left: 23%;
+    width: 77%;
+    color: #F0ECE5;
+    background: #F0ECE5;
+    flex: 5 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+.title {
+    margin: 2rem auto 0rem auto;
+    width: 90%;
+}
+main h1 {
+    display: block;
+    font-size: 5rem;
+    color: #161A30;
+}
+hr.long {
+    width: 100%;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem;
+}
+
+main section {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+.card-body {
+  color: black;
+}
+
+.card {
+  width: 42.5%;
+
+  color: #F0ECE5;
+}
+
+#CV {
+  margin: 5% 2.5% 5% 5%;
+}
+
+#bio {
+  margin: 5% 5% 5% 2.5%
+}
+
+.card-title {
+  font-size: 2rem;
+}
+.card-subtitle {
+  color: #161A30;
+}
+
+.fadein {
+    opacity: 1;
+    transition: opacity 2s;
+}
+.faded {
+    opacity: 0;
+}
+#contact {
+  float:bottom;
+  margin-left: 23%;
+  background-color:#31304D;
+  padding:5%;
+  width: 100%;
+}
+.row {
+  justify-content: space-between;
+}
+footer {
+  width: 100%;
+  margin-left: 23%;
+  background-color:#31304D;
+  display: flex;
+  justify-content: center;
+}
+.big-text {
+  font-size: 3rem;
+}
+.lead {
+  font-size: 1.5rem;
+}
+
+#contact-form
+{
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+.form-group {
+  margin-bottom: 2rem;
+}
+
+#current-page {
+  border: solid 2px #31304D;
+}
