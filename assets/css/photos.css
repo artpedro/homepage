@@ -146,12 +146,12 @@ hr.long {
 }
 
 main section {
-    padding: auto;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
-    align-content: center;
-}
+    align-content: space-evenly;
+    margin: 2vw;
+  }
 .card-body {
   color: black;
 }
@@ -189,6 +189,7 @@ main section {
   margin-left: 23%;
   background-color:#31304D;
   padding:5%;
+  padding-bottom: 0px;
   width: 100%;
 }
 .row {
@@ -214,9 +215,6 @@ footer {
   flex-flow: column wrap;
   justify-content: space-evenly;
 }
-.form-group {
-  margin-bottom: 2rem;
-}
 
 #current-page {
   border: solid 2px #31304D;
@@ -232,10 +230,10 @@ footer {
 }
 
 .gallery img {
+  margin: 0.5vw;
   height: 40vh;
   display: inline-block;
   overflow: hidden;
   box-shadow: 0 0 4px -1px #000;
   image-rendering: optimizeQuality;
-  margin: 2vh;
 }

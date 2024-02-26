@@ -187,6 +187,7 @@ main section {
   margin-left: 23%;
   background-color:#31304D;
   padding:5%;
+  padding-bottom: 0px;
   width: 100%;
 }
 .row {
