@@ -135,7 +135,7 @@
                     </div>
                 </section>
                 <footer id="main-footer">
-                    <p class="text-center">&copy; 2023 - Artur Pedro</p>
+                    <p id="date" class="text-center"></p>
                 </footer>
             </div>
             <script>
@@ -147,6 +147,8 @@
                     fadein(document.querySelector('#bio'));
                     fadein(document.querySelector('#CV'));
                 })
+                var date = new Date;
+                document.getElementById("date").innerHTML = "&copy; " + date.getFullYear() + " - Artur Pedro"
             </script>
         </body>
 
