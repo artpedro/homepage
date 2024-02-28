@@ -107,30 +107,48 @@
                             <p class="lead"><strong>Biotechnologist. Neuroscience.</strong></p>
                             <p>Python, Machine Learning, C, Java, JavaScript, HTML5, CSS3, SQL, APIs, Git, GitHub<br>
                                 <p>Please feel free to contact me with questions, comments or collaborations.</p>
-                            </div>
-                            <form id="contact-form" class="col-sm-6 col-md-offset-1">
+                            </div> 
+                            <form action="https://postmail.invotes.com/send" method="post" id="email_form" class="col-sm-6 col-md-offset-1">
+                                <input type="hidden" name="access_token" value="sa9x4xp97vg9kldqbdn9kow6" />
+                                <input type="hidden" name="success_url" value="." />
+                                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                                 <div class="form-group">
                                     <label class="control-label" for="contact-name">Name</label>
                                     <div class="controls">
-                                        <input id="contact-name" name="contactName" placeholder="Your name" class="form-control" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+                                        <input id="contact-name" name="extra_Name" placeholder="Your name" class="form-control" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label" for="contact-mail">Email</label>
                                     <div class=" controls">
-                                        <input id="contact-mail" name="email" placeholder="Your email" class="form-control" data-new-placeholder="Your email" type="email">
-
+                                        <input id="contact-mail" name="extra_Email" placeholder="Your email" class="form-control" data-new-placeholder="Your email" type="email">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label" for="contact-message">Message</label>
+                                    <label class="control-label" for="contact-message">Subject</label>
                                     <div class="controls">
-                                        <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control" data-new-placeholder="Your message"></textarea>
+                                        <input id="contact-subject" class="form-control" type="text" name="subject" placeholder="Subject"></textarea>
                                     </div>
                                 </div>
-                                <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-                                <input type="hidden" name="submitted" id="submitted" value="true" />
+                                <div class="form-group">
+                                    <label class="control-label" for="contact-message">Your message</label>
+                                    <div class="controls">
+                                        <textarea id="contact-message" name="text" placeholder="Your message" class="form-control" data-new-placeholder="Your message"></textarea>
+                                    </div>
+                                </div>
+                                <p><button id="submit_form" name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+                                <input type="hidden" name="submitted" id="submitted" value="true"/>
                             </form>
+                            <script>
+                                var submitButton = document.getElementById("submit_form");
+                                var form = document.getElementById("email_form");
+                                form.addEventListener("submit", function (e) {
+                                    setTimeout(function() {
+                                        submitButton.innerHTML = '<i class="fa fa-paper-plane"></i>Sending...';
+                                        submitButton.disabled = true;
+                                    }, 1);
+                                });
+                            </script> 
                         </div>
                     </div>
                 </section>
