@@ -12,14 +12,69 @@
         <link href="./assets/css/main.css" rel="stylesheet">
         <link href="./assets/css/photos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css" integrity="sha512-NVt7pmp5f+3eWRPO1h4A1gCf4opn4r5z2wS1mi7AaVcTzE9wDJ6RzMqSygjDzYHLp+mAJ2/qzXXDHar6IQwddQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="./assets/js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" integrity="sha512-7KzSt4AJ9bLchXCRllnyYUDjfhO2IFEWSa+a5/3kPGQbr+swRTorHQfyADAhSlVHCs1bpFdB1447ZRzFyiiXsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <title>Artur Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body>
+    <body>       
+        <div id="menu">
+        <input id="toggle-menu" class="checkbox" type="checkbox"/>
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+        </div>
+        <aside id="side-bar-mobile" style="display: none;">
+            <h1 class="name"><strong><a href="./index.html">ARTUR PEDRO</a></strong></h1>
+                    <hr>
+                    <img id="pfp" class="rounded" src="assets/image/arturpfp.jpeg">
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/artpedro/">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter" target="_blank" href="https://twitter.com/art___r">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="instagram" target="_blank" href="https://www.instagram.com/a_rt_nt/">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="github" target="_blank" href="https://github.com/artpedro">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </header>
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <a href="./underprogress.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="./photos.html">Photos</a>
+                        </li>
+                        <li>
+                            <a href="./underprogress.html">Study</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact me</a>
+                        </li>
+                    </ul>
+                </nav>
+        </aside>
         <div class="page">
-            <aside class="side-bar">
+            <aside id="side-bar-desktop"class="side-bar">
                 <header>
                     <h1 class="name"><strong><a href="./index.html">ARTUR PEDRO</a></strong></h1>
                     <hr>
@@ -67,7 +122,7 @@
                     </ul>
                 </nav>
             </aside>
-            <main>
+            <main id="main-page">
                 <div class="banner">
                 </div>
                 <div class="title">
@@ -171,9 +226,10 @@
                     </div>
                 </section>
                 <footer id="main-footer">
-                    <p class="text-center">&copy; 2023 - Artur Pedro</p>
+                    <p id="date" class="text-center"></p>
                 </footer>
             </div>
+            <script src="./assets/js/main.js"></script>
             <script>
                 baguetteBox.run('.baguetteBoxOne');
                 var title_id = 'greeting'
@@ -182,9 +238,9 @@
                 window.addEventListener('load', function() {
                     typeWriter(title_id, txt, speed);
                     fadein(document.querySelector('.gallery'));
-                    fadein(document.querySelector('#CV'));
                 })
             </script>
+
         </body>
 
     </html>

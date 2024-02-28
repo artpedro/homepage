@@ -12,10 +12,74 @@ a:hover
   color: inherit;
 }
 
+#menu {
+  display: none;
+}
+#side-bar-mobile {
+  display: none;
+}
+
+.checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+
+.hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+.hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
 div.page {
     display: flex;
     flex-flow: row wrap;
-    height:100%;
+    height: 100vh;
 }
 
 aside.side-bar {
@@ -217,4 +281,46 @@ footer {
 
 #current-page {
   border: solid 2px #31304D;
+}
+
+
+@media (max-width:700px) {
+  
+  #menu{
+    display: block;
+    position: fixed; /* Fixed positioning relative to the viewport */
+    top: 10px;       /* Distance from the top of the viewport */
+    left: 10px;     /* Distance from the right of the viewport */
+    z-index: 1000;   /* Ensures the button stays on top of other content */
+  }
+
+  #side-bar-mobile {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #090E6B;
+      overflow: hidden;
+      z-index: 999;
+      top: -100%; /* Initially off-screen */
+      left: 0;
+      transition: top 0.5s ease-in-out; 
+      max-height: 200%; /* Example max height */
+      overflow-y: auto; /* Enables vertical scrolling */
+  }
+
+  #side-bar-desktop {
+    display: none;
+  }
+  #main-page {
+    margin-left: 0%;
+    width: 100%;
+  }
+  #main-footer {
+    margin-left: 0%;
+    width: 100%;
+  }
+  #contact {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
