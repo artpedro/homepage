@@ -1,228 +1,333 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <link href="./assets/scss/variables.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-        <script src="https://kit.fontawesome.com/d563ea2da0.js" crossorigin="anonymous"></script>
-        <link href="./assets/css/main.css" rel="stylesheet">
-        <title>Artur Homepage</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur Pedro - Data Scientist & AI Researcher</title>
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/d563ea2da0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
 
-    <body>
-        <div id="menu">
-        <input id="toggle-menu" class="checkbox" type="checkbox"/>
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">AP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">
+                        Hi, I'm Artur Pedro
+                        <div class="typed-container">
+                            <span id="typed-text"></span>
+                        </div>
+                    </h1>
+                    <p class="hero-subtitle">Data Scientist & AI Researcher specializing in Biotechnology and Healthcare Solutions</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/artpedro/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/art___r" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/artpedro" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/a_rt_nt/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="assets/cv/ArturPedro_CV.pdf" class="cv-button" download>
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="assets/image/arturpfp.jpeg" alt="Artur Pedro" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
-        <aside id="side-bar-mobile" style="display: none;">
-            <h1 class="name"><strong><a href="./index.html">ARTUR PEDRO</a></strong></h1>
-                    <hr>
-                    <img id="pfp" class="rounded" src="assets/image/arturpfp.jpeg">
-                    <div class="social">
-                        <ul>
-                            <li>
-                                <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/artpedro/">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="twitter" target="_blank" href="https://twitter.com/art___r">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="instagram" target="_blank" href="https://www.instagram.com/a_rt_nt/">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="github" target="_blank" href="https://github.com/artpedro">
-                                    <i class="fa fa-github" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                </header>
-                <nav class="navigation">
-                    <ul>
-                        <li>
-                            <a href="./underprogress.html">Projects</a>
-                        </li>
-                        <li>
-                            <a href="./photos.html">Photos</a>
-                        </li>
-                        <li>
-                            <a href="./underprogress.html">Study</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact me</a>
-                        </li>
-                    </ul>
-                </nav>
-        </aside>
-        <div class="page">
-            <aside id="side-bar-desktop"class="side-bar">
-                <header>
-                    <h1 class="name"><strong><a href="./index.html">ARTUR PEDRO</a></strong></h1>
-                    <hr>
-                    <img id="pfp" class="rounded" src="assets/image/arturpfp.jpeg">
-                    <div class="social">
-                        <ul>
-                            <li>
-                                <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/artpedro/">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="twitter" target="_blank" href="https://twitter.com/art___r">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="instagram" target="_blank" href="https://www.instagram.com/a_rt_nt/">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="github" target="_blank" href="https://github.com/artpedro">
-                                    <i class="fa fa-github" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                </header>
-                <nav class="navigation">
-                    <ul>
-                        <li>
-                            <a href="./underprogress.html">Projects</a>
-                        </li>
-                        <li>
-                            <a href="./photos.html">Photos</a>
-                        </li>
-                        <li>
-                            <a href="./underprogress.html">Study</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact me</a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
-            <main id="main-page">
-                <div class="banner">
-                </div>
-                <div class="title">
-                    <h1>
-                        <strong id="greeting"></strong>
-                    </h1>
-                    <hr class="long">
-                </div>
-                <section>
-                    <div id="CV" class="card faded">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>Curriculum</strong></h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">About my professional life</h6>
-                            <hr>
-                            <p class="card-text">Currently, I'm graduating at the Federal University of Pará (UFPA) in <b>Biotechnology</b> with a specialization in <b>Dynamical systems</b> and <b>bioinformatics</b>. I am a curious and versatile person, passionate about science and computation, with interests in different areas of natural and exact sciences. Learning new concepts and adapting to new environments is easy for me. I consider myself an efficient collaborator.<br>
-                                At the moment, I am working on a research project that explores nonlinear dynamical systems and <b>machine learning</b> in the context of <b>neuroscience</b>. For future projects, I am also deepening my studies in other areas of <b>AI</b> and (biological) <b>signal processing</b>.<br>
-                                Also, I'm aspiring to become a <b>data scientist</b>. I'm extensively learning new statistical and mathematical concepts, improving my soft and hard skills and working on projects exploring a variety of models and data processing, using packages like Pandas, Scikit-Learn, PyTorch, TensorFlow and many others.<br> 
-                                I'm always looking for new opportunities for learning and growth. I believe that AI and neuroscience are changing the world, and I'm excited to be a part of that change.</p>
-                        </div>
-                    </div>
-                    <div id="bio" class="card faded">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>Who am I?</strong></h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">About my personal life</h6>
-                            <hr>
-                            <p class="card-text">From an early age, I’ve been drawn to the mathematics, the joy of science, and the innovative world of computer technology. These interests have not only shaped my academic pursuits, but also paved the way for my professional aspirations.<br>
-                                In the midst of my journey, my family, my dog, and my girlfriend have been my anchors, providing a sense of stability and unconditional love. They are my heart, filled with warmth and companionship.<br>
-                                As I look towards the future, I envision myself immersed in the field of technology and artificial intelligence. This is not just a career choice, but a lifelong passion that I hope to explore and contribute to.
-                                In addition to my professional goals, I have a deep-seated desire to travel, always besides my love. I yearn to experience diverse cultures, marvel at the wonders of the world, and broaden my perspectives through these journeys.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <section id="contact">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
-                            <h1 class="big-text"><strong>Contact Me</strong></h1>
-                            <p class="lead"><strong>Biotechnologist. Neuroscience.</strong></p>
-                            <p>Python, Machine Learning, C, Java, JavaScript, HTML5, CSS3, SQL, APIs, Git, GitHub<br>
-                                <p>Please feel free to contact me with questions, comments or collaborations.</p>
-                            </div> 
-                            <form action="https://postmail.invotes.com/send" method="post" id="email_form" class="col-sm-6 col-md-offset-1">
-                                <input type="hidden" name="access_token" value="sa9x4xp97vg9kldqbdn9kow6" />
-                                <input type="hidden" name="success_url" value="https://artpedro.github.io/homepage/" />
-                                <input type="hidden" name="error_url" value="https://artpedro.github.io/homepage/" />
-                                <div class="form-group">
-                                    <label class="control-label" for="contact-name">Name</label>
-                                    <div class="controls">
-                                        <input id="contact-name" name="extra_Name" placeholder="Your name" class="form-control" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="contact-mail">Email</label>
-                                    <div class=" controls">
-                                        <input id="contact-mail" name="extra_Email" placeholder="Your email" class="form-control" data-new-placeholder="Your email" type="email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="contact-message">Subject</label>
-                                    <div class="controls">
-                                        <input id="contact-subject" class="form-control" type="text" name="subject" placeholder="Subject"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="contact-message">Your message</label>
-                                    <div class="controls">
-                                        <textarea id="contact-message" name="text" placeholder="Your message" class="form-control" data-new-placeholder="Your message"></textarea>
-                                    </div>
-                                </div>
-                                <p><button id="submit_form" name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-                                <input type="hidden" name="submitted" id="submitted" value="true"/>
-                            </form>
-                            <script>
-                                var submitButton = document.getElementById("submit_form");
-                                var form = document.getElementById("email_form");
-                                form.addEventListener("submit", function (e) {
-                                    setTimeout(function() {
-                                        submitButton.innerHTML = '<i class="fa fa-paper-plane"></i>Sending...';
-                                        submitButton.disabled = true;
-                                    }, 1);
-                                });
-                            </script> 
-                        </div>
-                    </div>
-                </section>
-                <footer id="main-footer">
-                    <p id="date" class="text-center"></p>
-                </footer>
-            </div>
-            <script src="./assets/js/main.js"></script>
-            <script>
-                var title_id = 'greeting'
-                var txt = 'Hello there, I\'m Artur!';
-                var speed = 70;
-                window.addEventListener('load', function() {
-                    typeWriter(title_id, txt, speed);
-                    fadein(document.querySelector('#bio'));
-                    fadein(document.querySelector('#CV'));
-                });
-            </script>
-        </body>
+    </section>
 
-    </html>
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3>Academic Background</h3>
+                        <p>I'm pursuing my Bachelor's in <span class="highlight">Biotechnology</span> at the Federal University of Pará (UFPA), with an expected graduation in August 2025. My coursework focuses on <span class="highlight">genetics</span>, <span class="highlight">bioinformatics</span>, and <span class="highlight">computational biology</span>.</p>
+                        <p>I am a project-oriented, versatile learner passionate about developing innovative solutions to complex problems using data science and artificial intelligence. I excel at learning new concepts and adapting to new environments.</p>
+                        <div class="skills">
+                            <h4>Technical Skills</h4>
+                            <div class="skill-tags">
+                                <span>Python</span>
+                                <span>PyTorch</span>
+                                <span>Deep Learning</span>
+                                <span>Machine Learning</span>
+                                <span>SQL</span>
+                                <span>ETL</span>
+                                <span>Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3>Research Interests</h3>
+                        <p>I'm currently involved in multiple research projects, exploring the intersection of <span class="highlight">AI</span> and <span class="highlight">healthcare</span>. My work spans from neural time-series analysis to genomic data processing and optimization algorithms.</p>
+                        <p>As an aspiring <span class="highlight">data scientist</span>, I'm continuously expanding my knowledge in statistics, mathematics, and machine learning. I work with various tools and frameworks to develop innovative solutions for complex problems.</p>
+                        <div class="tools">
+                            <h4>Tools & Frameworks</h4>
+                            <div class="tool-tags">
+                                <span>PyTorch</span>
+                                <span>Scikit-learn</span>
+                                <span>Pandas</span>
+                                <span>Seaborn</span>
+                                <span>MongoDB</span>
+                                <span>Git</span>
+                                <span>Docker</span>
+                                <span>Flask</span>
+                                <span>MATLAB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Research Focus</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI in Healthcare</h3>
+                        <p>Developing deep learning solutions for neural time-series analysis and healthcare applications.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Computational Biology</h3>
+                        <p>Processing and visualizing genomic data using advanced ETL pipelines and MongoDB databases.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Optimization & Modeling</h3>
+                        <p>Implementing MCMC methods and genetic algorithms for complex system optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="experience-card">
+                        <h3>Laboratory of Biological Engineering</h3>
+                        <p class="position">Student Researcher</p>
+                        <p class="date">04/2023 - 12/2024</p>
+                        <ul>
+                            <li>MongoDB database development</li>
+                            <li>Data ETL with Python</li>
+                            <li>Genomic data visualization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="experience-card">
+                        <h3>Laboratory of Biological Simulation</h3>
+                        <p class="position">Student Researcher</p>
+                        <p class="date">01/2023 - Present</p>
+                        <ul>
+                            <li>Deep Learning for neural time-series</li>
+                            <li>Dynamical Systems modeling</li>
+                            <li>Healthcare AI solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="experience-card">
+                        <h3>Process Engineering Group</h3>
+                        <p class="position">Internship Student</p>
+                        <p class="date">05/2024 - 11/2024</p>
+                        <ul>
+                            <li>Monte Carlo optimization</li>
+                            <li>Sensitivity analysis</li>
+                            <li>Differential equations solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="achievement-card">
+                        <h3>Awards</h3>
+                        <ul>
+                            <li> First Place - Hackathon Mining Hub (2024)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="achievement-card">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>Machine Learning Specialization - Stanford Online</li>
+                            <li>Fundamentals of Deep Learning - NVIDIA</li>
+                            <li>Scrum Fundamentals Certified (SFC)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center mb-5">Feel free to reach out for collaborations, research opportunities, or just to say hello!</p>
+                    <form id="contact-form" action="https://formspree.io/f/xoqgwjjw" method="POST" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" name="_subject" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; <span id="year">2025</span> Artur Pedro. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Typed.js initialization
+        var typed = new Typed('#typed-text', {
+            strings: ['Data Scientist', 'AI Researcher', 'Biotechnologist', 'Deep Learning Engineer'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        const root = document.documentElement;
+        
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        root.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+        
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'light' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+    </script>
+</body>
+</html>
